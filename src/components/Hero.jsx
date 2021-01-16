@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback, useState } from "react";
 
 const FormInput = (props) => (
     <input
@@ -9,10 +9,22 @@ const FormInput = (props) => (
 );
 
 export default function Hero(props) {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [phone, setPhone] = useState("");
+    const [idea, setIdea] = useState("");
+
+    const handleSubmit = useCallback(() => {
+        const body = `Hi. I am ${name}, my number is ${phone}. I want to discuss about our project. ${idea}`;
+        window.open(`mailto:info@techgenie.ca?subject=${name}&body=${body}`);
+    }, []);
     return (
         <section className="w-full bg-center bg-cover bg-gradient-brand p-12">
             <div className="md:w-auto md:tw-container xs:w-full flex flex-col nv:flex-row gap-12 justify-center items-center h-full">
-                <div className="flex flex-col justify-center gap-3  " style={{ flex: 5 }}>
+                <div
+                    className="flex flex-col justify-center gap-3  "
+                    style={{ maxWidth: "643px", flex: 5 }}
+                >
                     <p className="text-white text-3xl font-light text-left xs:text-left dt:text-center">
                         Custom Website Development
                     </p>
@@ -37,18 +49,36 @@ export default function Hero(props) {
                     </div>
                     <form className="w-full flex flex-col gap-4 mb-4">
                         <div className="w-full flex flex-col gap-4">
-                            <FormInput placeholder="Name" />
-                            <FormInput placeholder="Email" />
-                            <FormInput type="number" placeholder="Phone" />
+                            <FormInput
+                                placeholder="Name"
+                                onChange={(e) => setName(e.target.value)}
+                                value={name}
+                            />
+                            <FormInput
+                                placeholder="Email"
+                                onChange={(e) => setEmail(e.target.value)}
+                                value={email}
+                            />
+                            <FormInput
+                                type="number"
+                                placeholder="Phone"
+                                onChange={(e) => setPhone(e.target.value)}
+                                value={phone}
+                            />
                         </div>
                         <textarea
                             style={{ maxHeight: "100px" }}
                             className="transition-all border border-opacity-50 focus:border-pink-500 duration-300 p-4 rounded-md bg-gray-100 focus:bg-white outline-none placeholder-gray-400 text-gray-800"
                             type="text"
                             placeholder="Your Idea"
+                            onChange={(e) => setIdea(e.target.value)}
+                            value={idea}
                         />
                     </form>
-                    <button className="tw-button-secondary w-full py-4 focus:outline-white">
+                    <button
+                        onClick={handleSubmit}
+                        className="tw-button-secondary w-full py-4 focus:outline-white"
+                    >
                         Send Message
                     </button>
                 </div>
