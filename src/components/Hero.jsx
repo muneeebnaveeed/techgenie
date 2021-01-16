@@ -11,7 +11,7 @@ const FormInput = (props) => (
 export default function Hero(props) {
     return (
         <section className="w-full bg-center bg-cover bg-gradient-brand p-12">
-            <div className="tw-container flex flex-col nv:flex-row gap-12 justify-center items-center h-full">
+            <div className="md:w-auto md:tw-container xs:w-full flex flex-col nv:flex-row gap-12 justify-center items-center h-full">
                 <div className="flex flex-col justify-center gap-3  " style={{ flex: 5 }}>
                     <p className="text-white text-3xl font-light text-left xs:text-left dt:text-center">
                         Custom Website Development
