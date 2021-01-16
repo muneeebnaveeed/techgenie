@@ -17,7 +17,7 @@ export default function Hero(props) {
     const handleSubmit = useCallback(() => {
         const body = `Hi. I am ${name}, my number is ${phone}. I want to discuss about our project. ${idea}`;
         window.open(`mailto:info@techgenie.ca?subject=${name}&body=${body}`);
-    }, []);
+    }, [name, phone, idea]);
     return (
         <section className="w-full bg-center bg-cover bg-gradient-brand p-12">
             <div className="md:w-auto md:tw-container xs:w-full flex flex-col nv:flex-row gap-12 justify-center items-center h-full">

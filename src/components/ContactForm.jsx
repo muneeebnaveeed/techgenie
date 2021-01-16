@@ -18,7 +18,7 @@ export default function ContactForm() {
     const handleSubmit = useCallback(() => {
         const body = `Hi. I am ${name}, my number is ${phone}. I want to discuss about our project. ${idea}`;
         window.open(`mailto:info@techgenie.ca?subject=${name}&body=${body}`);
-    }, []);
+    }, [name, phone, idea]);
 
     return (
         <>
