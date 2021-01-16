@@ -2,7 +2,7 @@ import React from "react";
 import { AiFillCheckCircle } from "react-icons/ai";
 
 const Package = ({ name, price, features }) => (
-    <div className="bg-white py-6 text-left rounded" style={{ width: "270px" }}>
+    <div className="bg-white flex-1 py-6 text-left rounded">
         <h1 className="text-black font-semibold text-2xl mb-6 px-12">{name}</h1>
         <h1 className="text-black font-bold py-6 px-12 text-4xl border-dashed border-t border-b border-gray-300 mb-6">
             <sup className="font-sans text-gray-300 mr-2">$</sup>

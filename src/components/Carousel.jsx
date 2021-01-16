@@ -4,13 +4,13 @@ import Slider from "react-slick";
 import { FaDotCircle } from "react-icons/fa";
 
 const PaginationIcon = ({ icon, position, onClick }) => {
-    const translation = position === "left" ? "-left-12" : "-right-12 md:-right-10";
+    const translation = position === "left" ? "-left-8" : "-right-8 md:-right-10";
     const Icon = icon;
     return (
         <Icon
             onClick={onClick}
             style={{ transform: "translateY(-50%)" }}
-            className={`z-10 absolute top-1/2 block text-6xl md:text-2xl text-indigo-500 transition-all cursor-pointer hover:text-black focus:outline-black ${translation}`}
+            className={`z-10 absolute top-1/2 block text-4xl md:text-2xl text-indigo-500 transition-all cursor-pointer hover:text-black focus:outline-black ${translation}`}
         />
     );
 };

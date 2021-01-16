@@ -17,20 +17,14 @@ const ProjectItem = ({ title, index, ...rest }) => {
             className="shadow cursor-pointer relative w-full md:w-64"
             onClick={() => window.open(`portfolio/${index}.jpg`)}
         >
-            <div
-                className="object-cover overflow-hidden"
-                style={{ width: "289px", height: "398px" }}
-            >
+            <div className="object-cover overflow-hidden w-full md:w-289px h-398px">
                 <img className="w-full h-full object-cover rounded" {...rest} />
             </div>
             {/* <div
                 className="absolute top-0 left-0 w-full h-full bg-black rounded opacity-10"
                 style={{ width: "289px", height: "398px" }}
             ></div> */}
-            <div
-                className="transition-all duration-500 absolute top-0 left-0 w-full h-full bg-black rounded opacity-0 hover:opacity-80 text-white flex flex-col items-start justify-end px-6"
-                style={{ width: "289px", height: "398px" }}
-            >
+            <div className="transition-all duration-500 absolute top-0 left-0 bg-black rounded opacity-0 hover:opacity-80 text-white flex flex-col items-start justify-end px-6 w-full md:w-289px h-398px">
                 <h1 className="text-2xl font-bold mb-4">{title}</h1>
             </div>
         </div>
@@ -49,7 +43,7 @@ export default function Projects() {
                     </p>
                 </div>
             </div>
-            <div className="tw-container flex flex-col md:flex-row gap-20 flex-wrap">
+            <div className="tw-container flex flex-col md:flex-row md:justify-center gap-20 flex-wrap">
                 {data.map((project, index) => (
                     <ProjectItem
                         key={`project-${index}`}

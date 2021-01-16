@@ -15,7 +15,7 @@ const Skill = ({ children, heading, icon }) => {
 
 export default function Skills() {
     return (
-        <section className="tw-container py-8 pt-0 flex gap-8">
+        <section className="tw-container py-8 pt-0 flex flex-wrap gap-8">
             <Skill
                 icon={<SkillIcon src="/icons/cms.svg" />}
                 heading="CMS Website Design & Development"

@@ -17,15 +17,18 @@ export default function Hero(props) {
                     style={{ flex: 5 }}
                 >
                     <p className="text-white text-3xl font-light">Custom Website Development</p>
-                    <h1 className="text-white text-4xl">We design and develop custom websites</h1>
+                    <h1 className="text-white text-4xl">
+                        We build Sales-Friendly and Future-Proof Websites
+                    </h1>
                     <p className="text-white text-xl font-light">
-                        We create responsive web applications and sites leveraging the most robust
-                        technologies in the industry to help you boost your business
+                        An unreliable, outdated, and mind-numbingly slow website is the quickest way
+                        to lose business and tarnish your brand image. Tech Genie is here to help
+                        you set that right.
                     </p>
                 </div>
                 <div
                     className="flex flex-col gap-6 px-12 py-8 bg-gray-300 rounded-xl text-center"
-                    style={{ flex: 3, width: "500px" }}
+                    style={{ flex: 3, maxWidth: "500px" }}
                 >
                     <div>
                         <h1 className="text-2xl mb-4">

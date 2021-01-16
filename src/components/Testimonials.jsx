@@ -59,12 +59,12 @@ export default function Testimonials() {
                         />
                     </div>
                 </div>
-                <p className="text-center mb-44">
+                <p className="text-center mb-12">
                     The feedback we get from our customers tells about our cooperation better than
                     we do and makes us move forward.
                 </p>
 
-                <div className="tw-container mb-44" style={{ maxWidth: "400px" }}>
+                <div className="tw-container" style={{ maxWidth: "400px" }}>
                     <Carousel {...sliderSettings}>
                         {/* <Testimonial src="https://via.placeholder.com/385x530" />
                         <Testimonial src="https://via.placeholder.com/385x530" />
