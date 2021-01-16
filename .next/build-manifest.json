@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/0brvj0_wPUPNuvjH58d7T/_buildManifest.js",
-    "static/0brvj0_wPUPNuvjH58d7T/_ssgManifest.js"
+    "static/Lba-JFYxp5xiGOOclueOI/_buildManifest.js",
+    "static/Lba-JFYxp5xiGOOclueOI/_ssgManifest.js"
   ],
   "pages": {
     "/": [
@@ -18,7 +18,7 @@
       "static/chunks/29107295.9aa850612cd94f86dcee.js",
       "static/chunks/3ef630e34cd10ba68f9d468ac363ff81c534e1e9.5858c56812fd1f98de2b.js",
       "static/chunks/f5fe35c2320d6eb49a880c566d8908df4384c468.4b8d96b262285d5c27d4.js",
-      "static/chunks/pages/index-c9d81019c7cbbda90e49.js"
+      "static/chunks/pages/index-c857ca323cce8b3a2260.js"
     ],
     "/Portfolio/CaseStudy": [
       "static/chunks/main-19718cbe439194860dfb.js",
