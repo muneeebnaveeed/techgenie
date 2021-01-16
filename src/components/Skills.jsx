@@ -5,7 +5,7 @@ const SkillIcon = (props) => <img {...props} style={{ width: "50px", height: "50
 const Skill = ({ children, heading, icon }) => {
     const Icon = icon;
     return (
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 w-289px">
             {Icon}
             <h1 className="font-semibold text-2xl text-pink-500">{heading}</h1>
             <p className="text-black">{children}</p>
@@ -15,7 +15,7 @@ const Skill = ({ children, heading, icon }) => {
 
 export default function Skills() {
     return (
-        <section className="tw-container py-8 pt-0 flex flex-wrap gap-8">
+        <section className="tw-container py-8 pt-0 flex justify-center md:justify-between nv:justify-center flex-wrap gap-8">
             <Skill
                 icon={<SkillIcon src="/icons/cms.svg" />}
                 heading="CMS Website Design & Development"
