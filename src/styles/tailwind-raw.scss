@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html,
+    body {
+        font-size: 15px;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-serif font-bold;
+    }
+}
+
+@layer components {
+    .tw-container {
+        @apply w-4/5 my-0 mx-auto;
+    }
+    .tw-button-primary {
+        @apply px-4 py-2 transition-all border border-transparent bg-gradient-brand text-white rounded hover:opacity-80 hover:border-indigo-500;
+        &.active {
+            @apply border-2 border-indigo-500 bg-none text-indigo-500 font-semibold;
+        }
+    }
+    .tw-button-secondary {
+        @apply px-4 py-2 font-bold transition-all duration-300 bg-pink-500 text-white rounded hover:bg-black;
+    }
+}
